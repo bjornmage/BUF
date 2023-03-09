@@ -18,6 +18,12 @@ SUN: The largest publicly visible company inside a solar system or the headquart
 
 SUPER STAR: A flagship or role model company that could one day become a sun. This could also be a fast growing project that is gaining momentum. Super Stars usually require a vast amount of resources and a large budget, yet they also achieve
 
+
+---
+
+The SUN is the largest publicly visible company inside a solar system or the headquarters of an organization. STARs are small companies or projects defined by S.T.A.R.s. MOONs are orbitals, side projects, start-ups, subsidiaries, or departments identified by their O.R.B.I.T.A.L. Framework. COMETs are unstable projects that need better planning or avoidance. ASTEROIDs are the same as comets. The Unified Business Framework (UBF) uses these components to classify and observe the structure and dynamics of businesses galaxies. The UBF aids organizations in planning large-scale project management and navigating multiple projects and organizations simultaneously, helping them understand, predict, and direct decisions across entire industries. It also helps in making informed decisions about companies, ideas, and investments.
+
+
 ```mermaid 
 graph LR
 A[Galaxy]-->B[Black Hole]
