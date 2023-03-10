@@ -93,14 +93,15 @@ end
 
 ```mermaid 
 graph BT
-O[Flagship Company]-->N[Headquarters]
-P[Company]-->N[Headquarters]
-V[Company]-->N[Headquarters]
-W[R&D Project]--DROID-->V[Company]
-Q[R&D Project]--DROID-->O[Flagship Company]
-R[R&D Project 2]--DROID-->O[Flagship Company]
-S[Bad Project]--DROID--->N[Headquarters]
-T[Unsuccessful Project]--DROID---->N[Headquarters]
+O{{Flagship Product}}-->id1(((Corporation)))
+P{{Product}}-->id1(((Corporation)))
+ZA>STAFF]---DRZ[(DROID)]-->XA[ISSUE]--ORBITAL-->W([Milestone])--STAR-->V{{Product}}-->id1(((Corporation)))
+ZB>STAFF]---DR[(DROID)]-->XC[ISSUE]--ORBITAL-->Q([Milestone])--STAR-->O{{Flagship Product}}
+ZE>STAFF]---DR[(DROID)]
+ZF>STAFF]---DR[(DROID)]
+ZF>STAFF]---Du[(DROID)]-->XD[ISSUE]--ORBITAL-->R([Milestone])--STAR-->O{{Flagship Product}}
+XE[ISSUE]--ORBITAL-->S([Bad Milestone])--STAR--->id1(((Corporation)))
+T([Unsuccessful Milestone])--STAR---->id1(((Corporation)))
 ```
 
 # STAR
