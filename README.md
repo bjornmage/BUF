@@ -25,35 +25,35 @@ The SUN is the largest publicly visible company inside a solar system or the hea
 
 
 ```mermaid 
-graph TD
-A[Universe]-->B[Galaxy]
-B[Galaxy]-->C[Black Hole]
-B[Galaxy]-->D[Super Nova]
-D[Super Nova]-->E[Solar System 1]
-B[Galaxy]--->E[Solar System 1]
-B[Galaxy]--->M[Solar System 2]
-C[Black Hole]-->Z[Solar System 3]
+graph BT
+B[Galaxy]-->A[Universe]
+C[Black Hole]-->B[Galaxy]
+D[Super Nova]-->B[Galaxy]
+E[Solar System 1]-->D[Super Nova]
+E[Solar System 1]--->B[Galaxy]
+M[Solar System 2]--->B[Galaxy]
+Z[Solar System 3]-->C[Black Hole]
+
 subgraph E[Solar System 1]
-F[Sun]-->G[Super Star]
-F[Sun]-->H[Star]
-G[Super Star]-->I[Moon]
-G[Super Star]-->J[Moon 2]
-F[Sun]-->K[Comet]
-F[Sun]-->L[Asteroid]
+direction BT
+G[Super Star]-->F[Sun]
+H[Star]-->F[Sun]
+I[Moon]-->G[Super Star]
+J[Moon 2]-->G[Super Star]
+K[Comet]-->F[Sun]
+L[Asteroid]-->F[Sun]
 end
 
 subgraph M[Solar System 2]
-N[Sun]-->O[Super Star]
-N[Sun]-->P[Star]
-O[Super Star]-->Q[Moon]
-O[Super Star]-->R[Moon 2]
-N[Sun]-->S[Comet]
-N[Sun]-->T[Asteroid]
+direction BT
+O[Super Star]-->N[Sun]
+P[Star]-->N[Sun]
+Q[Moon]-->O[Super Star]
+R[Moon 2]-->O[Super Star]
+S[Comet]-->N[Sun]
+T[Asteroid]-->N[Sun]
 end
-
-
 ```
-
 # STAR
 
 ---
