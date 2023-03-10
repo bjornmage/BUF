@@ -91,6 +91,17 @@ T[Unsuccessful Project]--DROID---->N[Headquarters]
 end
 ```
 
+```mermaid 
+graph BT
+O[Flagship Company]-->N[Headquarters]
+P[Company]-->N[Headquarters]
+V[Company]-->N[Headquarters]
+W[R&D Project]--DROID-->V[Company]
+Q[R&D Project]--DROID-->O[Flagship Company]
+R[R&D Project 2]--DROID-->O[Flagship Company]
+S[Bad Project]--DROID--->N[Headquarters]
+T[Unsuccessful Project]--DROID---->N[Headquarters]
+```
 
 # STAR
 
