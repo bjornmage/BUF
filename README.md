@@ -25,16 +25,17 @@ The SUN is the largest publicly visible company inside a solar system or the hea
 
 
 ```mermaid 
-graph LR
+graph TD
 A[Galaxy]-->B[Black Hole]
 A[Galaxy]-->C[Super Nova]
 A[Galaxy]-->D[Solar System]
 D[Solar System]-->E[Sun]
-D[Solar System]-->F[Super Star]
-D[Solar System]-->G[Star]
-D[Solar System]-->H[Moon]
-D[Solar System]-->I[Comet]
-D[Solar System]-->J[Asteroid]
+E[Sun]-->F[Super Star]
+E[Sun]-->G[Star]
+F[Super Star]-->H[Moon]
+F[Super Star]-->K[Moon 2]
+E[Sun]-->I[Comet]
+E[Sun]-->J[Asteroid]
 ```
 
 # STAR
