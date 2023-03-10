@@ -39,8 +39,8 @@ G[Super Star]-->F[Sun]
 H[Star]-->F[Sun]
 I[Moon]-->G[Super Star]
 J[Moon 2]-->G[Super Star]
-K[Comet]-->F[Sun]
-L[Asteroid]-->F[Sun]
+K[Comet]---->F[Sun]
+L[Asteroid]--->F[Sun]
 end
 
 subgraph M[Solar System 2]
@@ -49,8 +49,8 @@ O[Super Star]-->N[Sun]
 P[Star]-->N[Sun]
 Q[Moon]-->O[Super Star]
 R[Moon 2]-->O[Super Star]
-S[Comet]-->N[Sun]
-T[Asteroid]-->N[Sun]
+S[Comet]--->N[Sun]
+T[Asteroid]---->N[Sun]
 end
 ```
 
@@ -71,8 +71,8 @@ G[Flagship Company]-->F[Headquarters]
 H[Company]-->F[Headquarters]
 I[R&D Project]-->G[Flagship Company]
 J[R&D Project 2]-->G[Flagship Company]
-K[Bad Project]-->F[Headquarters]
-L[Unsuccessful Project]-->F[Headquarters]
+K[Bad Project]--->F[Headquarters]
+L[Unsuccessful Project]--->F[Headquarters]
 end
 
 
@@ -81,9 +81,13 @@ direction BT
 O[Flagship Company]-->N[Headquarters]
 P[Company]-->N[Headquarters]
 Q[R&D Project]-->O[Flagship Company]
+U[DROID]-->Q[R&D Project]
 R[R&D Project 2]-->O[Flagship Company]
-S[Bad Project]-->N[Headquarters]
-T[Unsuccessful Project]-->N[Headquarters]
+V[DROID]-->R[R&D Project 2]
+S[Bad Project]--->N[Headquarters]
+W[DROID]-->S[Bad Project]
+T[Unsuccessful Project]--->N[Headquarters]
+X[DROID]---->T[Unsuccessful Project]
 end
 ```
 
