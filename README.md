@@ -25,18 +25,68 @@ The SUN is the largest publicly visible company inside a solar system or the hea
 
 
 ```mermaid 
-graph TD
-A[Galaxy]-->B[Black Hole]
-A[Galaxy]-->C[Super Nova]
-A[Galaxy]-->D[Solar System]
-D[Solar System]-->E[Sun]
-E[Sun]-->F[Super Star]
-E[Sun]-->G[Star]
-F[Super Star]-->H[Moon]
-F[Super Star]-->K[Moon 2]
-E[Sun]-->I[Comet]
-E[Sun]-->J[Asteroid]
+graph BT
+B[Galaxy]-->A[Universe]
+C[Black Hole]-->B[Galaxy]
+D[Super Nova]-->B[Galaxy]
+E[Solar System 1]-->D[Super Nova]
+M[Solar System 2]--->B[Galaxy]
+Z[Solar System 3]-->C[Black Hole]
+
+subgraph E[Solar System 1]
+direction BT
+G[Super Star]-->F[Sun]
+H[Star]-->F[Sun]
+I[Moon]-->G[Super Star]
+J[Moon 2]-->G[Super Star]
+K[Comet]-->F[Sun]
+L[Asteroid]-->F[Sun]
+end
+
+subgraph M[Solar System 2]
+direction BT
+O[Super Star]-->N[Sun]
+P[Star]-->N[Sun]
+Q[Moon]-->O[Super Star]
+R[Moon 2]-->O[Super Star]
+S[Comet]-->N[Sun]
+T[Asteroid]-->N[Sun]
+end
 ```
+
+
+
+```mermaid 
+graph BT
+B[Industry]-->A[Corporate Sector]
+C[Large Enterprise]-->B[Holding Company]
+D[Innovative Industry-Wide Event]-->B[Industry]
+E[Holding Company 1]-->D[Innovative Industry-Wide Event]
+M[Holding Company 2]--->B[Industry]
+Z[Holding Company 3]-->C[Large Enterprise]
+
+subgraph E[Holding Company 1]
+direction BT
+G[Flagship Company]-->F[Headquarters]
+H[Company]-->F[Headquarters]
+I[R&D Project]-->G[Flagship Company]
+J[R&D Project 2]-->G[Flagship Company]
+K[Bad Project]-->F[Headquarters]
+L[Unsuccessful Project]-->F[Headquarters]
+end
+
+
+subgraph M[Holding Company 2]
+direction BT
+O[Flagship Company]-->N[Headquarters]
+P[Company]-->N[Headquarters]
+Q[R&D Project]-->O[Flagship Company]
+R[R&D Project 2]-->O[Flagship Company]
+S[Bad Project]-->N[Headquarters]
+T[Unsuccessful Project]-->N[Headquarters]
+end
+```
+
 
 # STAR
 
